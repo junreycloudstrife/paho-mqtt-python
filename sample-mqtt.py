@@ -16,7 +16,10 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("mqtt.eclipse.org", 1883, 60)
+# client.connect("mqtt.eclipse.org", 1883, 60)
+# client.connect("test.mosquitto.org", 1883, 60)
+client.connect("mqtt.eclipseprojects.io", 1883, 60)
+
 
 # Blocking call that processes network traffic, dispatches callbacks and
 # handles reconnecting.
